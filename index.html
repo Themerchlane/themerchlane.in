@@ -139,10 +139,16 @@
   <p class="contact-description">Have a question, custom request, or want to collaborate? Drop us a message below.</p>
 
 <form action="https://formsubmit.co/el/xucunu" method="POST" class="contact-form">
-     <input type="text" name="name" required>
-     <input type="email" name="email" required>
-     <button type="submit">Send</button>
-</form>
+        <!-- Prevent spam and auto-submissions -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New message from Merch Lane contact form">
+        <input type="hidden" name="_next" value="https://themerchlane.in/thank-you.html">
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
 </section>
 
 
