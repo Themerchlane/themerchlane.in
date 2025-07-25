@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Merch Lane</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>Have a question or want a custom design? Drop us a message!</p>
+
+      <form action="https://formsubmit.co/themerchlane.info@gmail.com" method="POST" class="contact-form">
+        <!-- Prevent spam and auto-submissions -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New message from Merch Lane contact form">
+        <input type="hidden" name="_next" value="https://themerchlane.in/thank-you.html">
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
