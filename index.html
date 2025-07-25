@@ -135,11 +135,33 @@
 
   <!-- Call To Action Section -->
 <section class="contact-section">
-  <h2 class="section-title">Contact Us</h2>
-  <p class="contact-description">Have a question, custom request, or want to collaborate? Drop us a message below.</p>
+  <h2 class="section-title">Get in Touch</h2>
+  <form action="https://formsubmit.co/el/xucunu" method="POST" class="contact-form" autocomplete="off">
+    
+    <!-- Hidden options -->
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="https://themerchlane.com/thankyou.html" />
 
-<a href="https://formsubmit.co/el/xucunu" target="_blank">Email us</a>
+    <!-- Name -->
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required />
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required />
+    </div>
+
+    <!-- Message -->
+    <div class="form-group">
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="submit-button">Send Message</button>
+  </form>
 </section>
+
 
 
 
